@@ -1,0 +1,27 @@
+<!-- <div class="container"> -->
+  <button type="button" class="btn btn-success mt-3 ms-4" routerLink="/form">Add</button>
+
+    <table class="table ms-2   mt-4  table-striped">
+        <thead>
+          <tr >
+            <th scope="col">student name</th>
+            <th scope="col">last name</th>
+            <th scope="col">contact</th>
+            <th scope="col">age</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of studentList; let i=index">
+            <td>
+              <a href=""></a>
+            </td>
+            <td>{{item.studentName}}</td>
+            <td>{{item.studentLName}}</td>
+            <td>{{item.contact}}</td>
+            <td>{{item.age}}</td>
+          </tr>
+        </tbody>
+        </table>
+        
+<!-- </div> -->

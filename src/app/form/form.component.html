@@ -1,0 +1,57 @@
+<div class="container shadow mt-3">
+    <h1 class="m-4">STUDENT REGISTRATION FORM</h1>
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+        <div class="row w-65 ms-4 ">
+           
+            <span class="me-5"><button type="submit" class="btn btn-success m-5" (click)="onSubmit()" >Add</button>
+            </span>
+            <div class="mb-3">
+                <label for="clg" class="form-label">Choose collage name</label>
+                <select formControlName="collageName" class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example" >
+                    <option selected>Open this select menu</option>
+                    <option value="collage of Arts">collage of Arts</option>
+                    <option value="collage of engineering">collage of engineering</option>
+                    <option value="Collage of B-Pharmacy">Collage of B-Pharmacy</option>
+                    <option value="Diploma collage">Diploma collage</option>
+                    <option value=" collage D-pharm">collage D-pharm</option>
+                    <option value="collage of BHMS">collage of BHMS</option>
+                    <option value="collage of HOmiopathy">collage of HOmiopathy</option>
+                  </select>
+
+                  <label for="cl" class="form-label">Choose Class</label>
+                <select class="form-select form-select-lg mb-3" formControlName="class" aria-label=".form-select-lg example" >
+                    <option selected>Open this select menu</option>
+                    <option value="collage of Arts">Class 1</option>
+                    <option value="collage of engineering">Class 2</option>
+                    <option value="Collage of B-Pharmacy">Class 3</option>
+                    <option value="Diploma collage">Class 4</option>
+                    <option value=" collage D-pharm">Class 5</option>
+                    <option value="collage of BHMS">Class 6</option>
+                    <option value="collage of HOmiopathy">Class 7</option>
+                  </select>
+            </div>
+            <h2 class="m-4">STUDENT DATA</h2>
+
+            <div class="col mb-3">
+                <label for="id1" class="form-label">Name of student</label>
+                <input formControlName="studentName" type="text" name="name" id="id1">
+            </div>
+            <div class="col mb-3">
+                <label for="id2" class="form-label">last name</label>
+                <input formControlName="lastName" type="text" name="lname" id="id2">
+            </div>
+            <div class="col mb-3">
+                <label for="id3" class="form-label">Contact</label>
+                <input formControlName="contact" type="text" name="name" id="id3">
+            </div>
+            <div class="col mb-3">
+                <label for="id4" class="form-label">Age</label>
+                <input formControlName="age"  type="text" name="name" id="id4">
+            </div>
+        </div>
+    
+    
+    </form>
+</div>
+
+<router-outlet></router-outlet>
