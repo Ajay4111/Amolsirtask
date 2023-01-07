@@ -3,8 +3,7 @@
     <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
         <div class="row w-65 ms-4 ">
            
-            <span class="me-5"><button type="submit" class="btn btn-success m-5" (click)="onSubmit()" >Add</button>
-            </span>
+            
             <div class="mb-3">
                 <label for="clg" class="form-label">Choose collage name</label>
                 <select formControlName="collageName" class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example" >
@@ -21,13 +20,11 @@
                   <label for="cl" class="form-label">Choose Class</label>
                 <select class="form-select form-select-lg mb-3" formControlName="class" aria-label=".form-select-lg example" >
                     <option selected>Open this select menu</option>
-                    <option value="collage of Arts">Class 1</option>
-                    <option value="collage of engineering">Class 2</option>
-                    <option value="Collage of B-Pharmacy">Class 3</option>
-                    <option value="Diploma collage">Class 4</option>
-                    <option value=" collage D-pharm">Class 5</option>
-                    <option value="collage of BHMS">Class 6</option>
-                    <option value="collage of HOmiopathy">Class 7</option>
+                    <option value="First Year">FY</option>
+                    <option value="second Year">SY</option>
+                    <option value="third Year">TY</option>
+                    <option value="final year">BE</option>
+                    <option value=" ME">ME</option>
                   </select>
             </div>
             <h2 class="m-4">STUDENT DATA</h2>
@@ -49,7 +46,7 @@
                 <input formControlName="age"  type="text" name="name" id="id4">
             </div>
         </div>
-    
+        <button type="submit" class="btn btn-success m-5" routerLink="/add-form" (click)="onSubmit()" >Add</button>
     
     </form>
 </div>

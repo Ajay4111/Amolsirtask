@@ -20,10 +20,17 @@ export class AddFormComponent implements OnInit {
         this.studentList=data;
       }   });
   }
+
+  editStudent(){
+    
+  }
 }
 export interface Student{
+  id:number;
+  collageName:string;
+  class:string;
   studentName:string;
-  studentLName:string;
+  lastName:string;
   contact:number;
   age:number
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { StudentService } from '../student.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { StudentService } from '../student.service';
 export class FormComponent implements OnInit {
 studentForm!:FormGroup;
 // studentData:any=[];
-  constructor(private fb:FormBuilder, private svc:StudentService) { }
+  constructor(private fb:FormBuilder, private svc:StudentService, private rout:Router) { }
 
   ngOnInit(): void {
     this.creatForm()
@@ -18,6 +19,7 @@ studentForm!:FormGroup;
 
   creatForm(){
     this.studentForm=this.fb.group({
+      'id':[''],
       'collageName':['',[Validators.required]],
       'class':['',[Validators.required]],
       'studentName':['',[Validators.required]],
@@ -31,9 +33,13 @@ studentForm!:FormGroup;
     return this.studentForm.value
   }
   onSubmit(){
-    let x=this.studentForm.value;
-    return this.svc.postDataToServer("stud",x).subscribe((data)=>{
+    let data=this.studentForm.value;
+    return this.svc.postDataToServer("stud",data).subscribe((data)=>{
       console.log(data);
+      this.rout.navigate(['add-form']);
+    },
+    error=>{
+      console.log(error);
     })
 }
   

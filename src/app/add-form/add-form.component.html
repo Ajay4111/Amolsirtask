@@ -1,9 +1,11 @@
 <!-- <div class="container"> -->
-  <button type="button" class="btn btn-success mt-3 ms-4" routerLink="/form">Add</button>
+  <button type="button" class="btn btn-success mt-3 ms-4" routerLink="/form">Add student</button>
 
     <table class="table ms-2   mt-4  table-striped">
         <thead>
           <tr >
+            <th scope="col"> collageName</th>
+            <th scope="col">class</th>
             <th scope="col">student name</th>
             <th scope="col">last name</th>
             <th scope="col">contact</th>
@@ -13,13 +15,18 @@
         </thead>
         <tbody>
           <tr *ngFor="let item of studentList; let i=index">
-            <td>
-              <a href=""></a>
-            </td>
+            
+            <!-- <td>{{item.id}}</td> -->
+            <td>{{item.collageName}}</td>
+            <td>{{item.class}}</td>
             <td>{{item.studentName}}</td>
-            <td>{{item.studentLName}}</td>
+            <td>{{item.lastName}}</td>
             <td>{{item.contact}}</td>
             <td>{{item.age}}</td>
+            <td>
+              <a class="m-2"  (click)="editStudent()"> Update</a>
+              <a class="m-2">Delete</a>
+            </td>
           </tr>
         </tbody>
         </table>

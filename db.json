@@ -1,10 +1,58 @@
 {
-    "stud":[
-        {
-        "studentName":"namita",
-  "studentLName":"sharma",
-  "contact":8989898989,
-  "age":20
-        }
-    ]
+  "stud": [
+    {
+      "id": "1",
+      "collageName": "cop",
+      "class": "class 2",
+      "studentName": "namita",
+      "lastName": "sharma",
+      "contact": 8989898989,
+      "age": 20
+    },
+    {
+      "id": "RM0o6cy",
+      "collageName": "collage of engineering",
+      "class": "collage of engineering",
+      "studentName": "fgg",
+      "lastName": "rtt",
+      "contact": "4566",
+      "age": "3"
+    },
+    {
+      "id": "xJ3S0qS",
+      "collageName": "collage of engineering",
+      "class": "collage of engineering",
+      "studentName": "fgg",
+      "lastName": "rtt",
+      "contact": "4566",
+      "age": "3"
+    },
+    {
+      "id": "9bmYUXe",
+      "collageName": "collage of Arts",
+      "class": "collage of Arts",
+      "studentName": "tttttt",
+      "lastName": "thggg",
+      "contact": "4455566",
+      "age": "5"
+    },
+    {
+      "id": "dijYhMK",
+      "collageName": " collage D-pharm",
+      "class": "collage of BHMS",
+      "studentName": "rahul",
+      "lastName": "sharma",
+      "contact": "4556778889",
+      "age": "20"
+    },
+    {
+      "id": "dRq-m-j",
+      "collageName": "Diploma collage",
+      "class": "third Year",
+      "studentName": "ajay",
+      "lastName": "pingle",
+      "contact": "9511202011",
+      "age": "28"
+    }
+  ]
 }
