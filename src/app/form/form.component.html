@@ -2,8 +2,7 @@
     <h1 class="m-4">STUDENT REGISTRATION FORM</h1>
     <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
         <div class="row w-65 ms-4 ">
-           
-            
+        
             <div class="mb-3">
                 <label for="clg" class="form-label">Choose collage name</label>
                 <select formControlName="collageName" class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example" >
@@ -28,6 +27,10 @@
                   </select>
             </div>
             <h2 class="m-4">STUDENT DATA</h2>
+            <!-- <div class="col mb-3">
+                <label for="id" class="form-label">Id</label>
+                <input formControlName="id" type="text" name="id" id="id">
+            </div> -->
 
             <div class="col mb-3">
                 <label for="id1" class="form-label">Name of student</label>
@@ -46,7 +49,8 @@
                 <input formControlName="age"  type="text" name="name" id="id4">
             </div>
         </div>
-        <button type="submit" class="btn btn-success m-5" routerLink="/add-form" (click)="onSubmit()" >Add</button>
+        <button type="submit" class="btn btn-success m-5" routerLink="/add-form" (click)="onSubmit()" >Save</button>
+        <button type="button" class="btn btn-success m-5" routerLink="/add-form">Back</button>
     
     </form>
 </div>

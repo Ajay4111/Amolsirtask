@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StudentService } from '../student.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { StudentService } from '../student.service';
 })
 export class AddFormComponent implements OnInit {
   studentList:Student[]=[];
-  constructor(private student:StudentService) { }
+  constructor(private student:StudentService, private rout:Router) { }
   
   ngOnInit(): void {
     this.getStudentList();
@@ -21,7 +22,8 @@ export class AddFormComponent implements OnInit {
       }   });
   }
 
-  editStudent(){
+  editStudentDetails(id:number){
+    this.rout.navigate(['editStudentDetails',id]);
     
   }
 }

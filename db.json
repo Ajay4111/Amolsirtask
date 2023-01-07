@@ -1,7 +1,7 @@
 {
   "stud": [
     {
-      "id": "1",
+      "id": 1,
       "collageName": "cop",
       "class": "class 2",
       "studentName": "namita",
@@ -10,49 +10,40 @@
       "age": 20
     },
     {
-      "id": "RM0o6cy",
-      "collageName": "collage of engineering",
-      "class": "collage of engineering",
-      "studentName": "fgg",
-      "lastName": "rtt",
-      "contact": "4566",
-      "age": "3"
-    },
-    {
-      "id": "xJ3S0qS",
-      "collageName": "collage of engineering",
-      "class": "collage of engineering",
-      "studentName": "fgg",
-      "lastName": "rtt",
-      "contact": "4566",
-      "age": "3"
-    },
-    {
-      "id": "9bmYUXe",
-      "collageName": "collage of Arts",
-      "class": "collage of Arts",
-      "studentName": "tttttt",
-      "lastName": "thggg",
-      "contact": "4455566",
-      "age": "5"
-    },
-    {
-      "id": "dijYhMK",
-      "collageName": " collage D-pharm",
-      "class": "collage of BHMS",
-      "studentName": "rahul",
-      "lastName": "sharma",
-      "contact": "4556778889",
-      "age": "20"
-    },
-    {
-      "id": "dRq-m-j",
+      "id": 2,
       "collageName": "Diploma collage",
-      "class": "third Year",
-      "studentName": "ajay",
-      "lastName": "pingle",
-      "contact": "9511202011",
-      "age": "28"
+      "class": "second Year",
+      "studentName": "tyyuu",
+      "lastName": "yyuu",
+      "contact": "44555",
+      "age": "32"
+    },
+    {
+      "id": 3,
+      "collageName": "",
+      "class": "",
+      "studentName": "",
+      "lastName": "",
+      "contact": "",
+      "age": ""
+    },
+    {
+      "id": 4,
+      "collageName": "collage of engineering",
+      "class": "second Year",
+      "studentName": "pillu",
+      "lastName": "tillu",
+      "contact": "5566",
+      "age": "3"
+    },
+    {
+      "id": 5,
+      "collageName": "collage of engineering",
+      "class": "second Year",
+      "studentName": "tt",
+      "lastName": "tt",
+      "contact": "455",
+      "age": "6"
     }
   ]
 }

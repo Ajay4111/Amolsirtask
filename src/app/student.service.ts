@@ -21,4 +21,9 @@ httpHeader:HttpHeaders=new HttpHeaders()
     let url=this.baseUrl+endPoint
    return this.http.post(url,requestBody,{'headers':this.httpHeader})
   }
+
+  putDataToServer(endPoint:string, requestBody:any){
+    let url=this.baseUrl+endPoint
+   return this.http.put(url,requestBody,{'headers':this.httpHeader})
+  }
 }

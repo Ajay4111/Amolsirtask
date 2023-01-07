@@ -4,29 +4,34 @@
     <table class="table ms-2   mt-4  table-striped">
         <thead>
           <tr >
+            <th scope="col">Action</th>
+            <th scope="col"> Id</th>
             <th scope="col"> collageName</th>
             <th scope="col">class</th>
             <th scope="col">student name</th>
             <th scope="col">last name</th>
             <th scope="col">contact</th>
             <th scope="col">age</th>
-            <th scope="col">Action</th>
+         
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let item of studentList; let i=index">
+            <td >
+              <!-- <a class="me-2" > <i class="bi bi-pencil"></i></a>
+              <a class="me-2"><i class="bi bitrash3"></i></a> -->
+              <a class="me-2" (click)="editStudentDetails(item.id)" >Update</a>
+              <a class="me-2" >delete</a>
+            </td>
+            <td>{{item.id}}</td>
             
-            <!-- <td>{{item.id}}</td> -->
             <td>{{item.collageName}}</td>
             <td>{{item.class}}</td>
             <td>{{item.studentName}}</td>
             <td>{{item.lastName}}</td>
             <td>{{item.contact}}</td>
             <td>{{item.age}}</td>
-            <td>
-              <a class="m-2"  (click)="editStudent()"> Update</a>
-              <a class="m-2">Delete</a>
-            </td>
+            
           </tr>
         </tbody>
         </table>
